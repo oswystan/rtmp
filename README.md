@@ -31,6 +31,8 @@ $ ./ffmpeg -stream_loop -1 -re  -i ~/demo.flv -c copy -f flv rtmp://localhost:19
 $ vlc rtmp://localhost:1935/live/movie
 $ rtmpdump -r rtmp://localhost:1935/live/movie -o b.flv
 
+## play a yuv file
+$ ffplay -f rawvideo -video_size 1920x1080 a.yuv
 ```
 
 * [rtmpdump source](http://rtmpdump.mplayerhq.hu/download/)
@@ -39,11 +41,11 @@ $ rtmpdump -r rtmp://localhost:1935/live/movie -o b.flv
 # library
 
 ``` shell
-## gortmp
+## golang library gortmp
 $ go get github.com/zhangpeihao/gortmp
 
-## librtmp
-$ wget http://rtmpdump.mplayerhq.hu/download/rtmpdump-2.3.tgz
+## c library librtmp
+$ wget http://rtmpdump.mplayerhq.hu/download/rtmpdump-2.3.tgz && tar xvf rtmpdump-2.3.tgz
 
 ```
 
