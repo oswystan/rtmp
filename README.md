@@ -45,15 +45,18 @@ $ go get github.com/zhangpeihao/gortmp
 ## c library librtmp
 $ wget http://rtmpdump.mplayerhq.hu/download/rtmpdump-2.3.tgz && tar xvf rtmpdump-2.3.tgz
 
+## libyuv for yuv raw data scale and blit
+$ git clone https://chromium.googlesource.com/libyuv/libyuv
+
 ```
 
 # protocols
 
 * [rtmp](https://www.adobe.com/devnet/rtmp.html)
 
-* [amf0](http://download.macromedia.com/pub/labs/amf/amf0_spec_121207.pdf)
+* [amf0](https://www.adobe.com/content/dam/acom/en/devnet/pdf/amf0-file-format-specification.pdf)
 
-* [amf3](http://download.macromedia.com/pub/labs/amf/amf3_spec_121207.pdf)
+* [amf3](https://www.adobe.com/content/dam/acom/en/devnet/pdf/amf-file-format-spec.pdf)
 
 # tips
 
